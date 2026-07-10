@@ -1,0 +1,78 @@
+name: Branche auto par issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  creer-branche:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Créer et lier la branche à l'issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const labels = issue.labels.map(l => l.name);
+
+            // Préfixe selon le label du template
+            const prefix = labels.includes('bug') ? 'fix'
+              : labels.includes('documentation') ? 'docs'
+              : 'feat';
+
+            // Slug depuis le titre : on retire le préfixe [Feat]/[Bug]/[Docs],
+            // les accents et tout ce qui n'est pas alphanumérique
+            const slug = issue.title
+              .replace(/^\[[^\]]+\]\s*/, '')
+              .toLowerCase()
+              .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-+|-+$/g, '')
+              .slice(0, 40)
+              .replace(/-+$/, '');
+
+            const branchName = `${prefix}/${issue.number}-${slug || 'sans-titre'}`;
+
+            const { data: mainRef } = await github.rest.git.getRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'heads/main',
+            });
+
+            // createLinkedBranch crée la branche ET l'affiche dans la
+            // section "Development" de l'issue (comme le bouton Create a branch)
+            await github.graphql(`
+              mutation($issueId: ID!, $oid: GitObjectID!, $name: String!, $repositoryId: ID!) {
+                createLinkedBranch(input: {
+                  issueId: $issueId,
+                  oid: $oid,
+                  name: $name,
+                  repositoryId: $repositoryId
+                }) {
+                  linkedBranch { ref { name } }
+                }
+              }
+            `, {
+              issueId: issue.node_id,
+              oid: mainRef.object.sha,
+              name: branchName,
+              repositoryId: context.payload.repository.node_id,
+            });
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: [
+                `🌿 Branche créée automatiquement : \`${branchName}\``,
+                '',
+                'Pour travailler dessus :',
+                '```bash',
+                `git fetch origin && git switch ${branchName}`,
+                '```',
+              ].join('\n'),
+            });

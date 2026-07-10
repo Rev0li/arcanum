@@ -11,18 +11,37 @@ Issue ouverte → Branche créée depuis l'issue → Commits → PR ("Closes #N"
 
 ### 1. Créer une issue
 
-Toute tâche (feature ou bug) commence par une issue, via les templates ✨ Feature ou 🐛 Bug. L'issue décrit le **quoi** et les critères d'acceptation.
+Toute tâche commence par une issue, via l'un des templates. L'issue décrit le **quoi** et les critères d'acceptation.
 
-### 2. Créer la branche depuis l'issue
+**Syntaxe des titres** — le préfixe est pré-rempli par le template, le titre décrit l'action :
 
-Sur la page de l'issue, utiliser le bouton **"Create a branch"** (section Development, colonne de droite) — cela lie automatiquement la branche à l'issue.
+| Template | Préfixe du titre | Exemple |
+|----------|------------------|---------|
+| ✨ Feature | `[Feat]` | `[Feat] Système de combat au tour par tour` |
+| 🐛 Bug | `[Bug]` | `[Bug] Crash à l'ouverture de l'inventaire` |
+| 📝 Documentation | `[Docs]` | `[Docs] Lore des royaumes du Nord` |
 
-Convention de nommage :
+**Labels de domaine** — en plus du label de type posé par le template (`enhancement`, `bug`, `documentation`), ajouter le ou les domaines concernés :
+
+| Label | Domaine |
+|-------|---------|
+| `front` | Interface / côté joueur |
+| `back` | Serveur / logique métier |
+| `bdd` | Base de données |
+| `game-design` | Règles du jeu, équilibrage, lore |
+| `infra` | Outils, CI, hébergement |
+
+### 2. La branche est créée automatiquement 🤖
+
+À l'ouverture de l'issue, une GitHub Action ([branche-auto.yml](.github/workflows/branche-auto.yml)) crée la branche, la lie à l'issue (section Development) et poste en commentaire la commande pour la récupérer.
+
+Convention de nommage (appliquée par l'Action selon le label de l'issue) :
 
 | Type | Format | Exemple |
 |------|--------|---------|
 | Feature | `feat/N-description-courte` | `feat/12-systeme-de-combat` |
 | Bug | `fix/N-description-courte` | `fix/23-crash-inventaire` |
+| Documentation | `docs/N-description-courte` | `docs/8-lore-royaumes-du-nord` |
 
 En local :
 
