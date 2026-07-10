@@ -1,0 +1,29 @@
+name: 🐛 Bug
+description: Signaler un problème
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: comportement
+    attributes:
+      label: Comportement observé
+      description: Que se passe-t-il ?
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Comportement attendu
+      description: Que devrait-il se passer ?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: |
+        1. Lancer le jeu
+        2. Aller dans ...
+        3. Cliquer sur ...
+    validations:
+      required: true

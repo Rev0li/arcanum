@@ -1,0 +1,30 @@
+name: ✨ Feature
+description: Proposer une nouvelle fonctionnalité
+title: "[Feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Qu'est-ce que cette fonctionnalité doit faire ?
+      placeholder: En tant que joueur, je veux pouvoir...
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      description: Comment sait-on que c'est terminé ?
+      placeholder: |
+        - [ ] Le joueur peut ...
+        - [ ] Quand ..., alors ...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes techniques (optionnel)
+      description: Pistes d'implémentation, fichiers concernés, dépendances...
+    validations:
+      required: false
