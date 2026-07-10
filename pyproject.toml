@@ -1,0 +1,36 @@
+[project]
+name = "arcanum"
+version = "0.1.0"
+description = "Arcanum — PBBG de sorcellerie, serveur autoritaire (remake de Tales of Magic)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "django==5.2.*",
+    "psycopg[binary]>=3.2",
+    "gunicorn>=23.0",
+    "django-htmx>=1.19",
+    "argon2-cffi>=23.1",
+]
+
+[dependency-groups]
+dev = [
+    "django-stubs>=5.2",
+    "pytest>=8.3",
+    "pytest-django>=4.11",
+    "ruff>=0.12",
+    "pyright>=1.1.400",
+    "import-linter>=2.3",
+    "pre-commit>=4.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Les trois paquets de premier niveau vivent sous src/ (ADR-002 §3) ;
+# l'installation editable les rend importables sans manipulation de sys.path.
+[tool.hatch.build.targets.wheel]
+packages = ["src/domain", "src/game", "src/config"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.dev"
+testpaths = ["tests"]
