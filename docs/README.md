@@ -16,7 +16,7 @@ Ce dossier contient le cahier des charges complet du projet. À placer dans `doc
 10. `05_QUESTIONS_OUVERTES.md` — journal des décisions actées et des questions de spec à trancher pendant le ticketing (le nom est acté : **Arcanum**).
 11. `08_REFERENCES_ORIGINAL.md` — tout ce qui est documenté sur le Tales of Magic original : sources, mécaniques attestées, écarts assumés du remake.
 12. `09_ANTITRICHE.md` — modèle de menaces et mesures antitriche (statut : propositions à valider par le porteur de projet).
-13. `assets/REGISTRE.md` — registre et checklist de production de tous les assets graphiques (+ `assets/PROMPTS.md` : gabarits de génération d'illustrations).
+13. `assets/REGISTRE.md` — registre et checklist de production de tous les assets graphiques (+ `assets/PROMPTS.md` : gabarits de génération ; `assets/INSPIRATIONS.md` : moodboard UI annoté).
 
 ## Prompt de démarrage suggéré pour l'assistant IA
 
