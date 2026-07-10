@@ -106,11 +106,11 @@
 
 ---
 
-## Lot II — Illustrations de créatures (20, génération IA via `PROMPTS.md`)
+## Lot II — Illustrations de créatures (24, génération IA via `PROMPTS.md`)
 
-> Le bestiaire ci-dessous est une **proposition à valider** (elle servira aussi de base au seed de la Phase 2). Couvre les exemples du GDD (rats, zombies, gobelins, esprits, golems, dragons) sur les 50 niveaux. Format 3:4, WebP ≤ 150 Ko. En attendant : silhouettes SVG monochromes (07 §8).
+> **Bestiaire validé par le porteur de projet le 10/07/2026** (décision actée, voir 05) — c'est la base du seed de la Phase 2. Couvre les exemples du GDD (rats, zombies, gobelins, esprits, golems, dragons) sur les 50 niveaux, plus les 4 boss des 2 donjons V1. Format 3:4, WebP ≤ 150 Ko. En attendant : silhouettes SVG monochromes (07 §8).
 
-| Créature (proposition) | Tranche de niveau | Statut |
+| Créature (validée) | Tranche de niveau | Statut |
 |---|---|---|
 | Rat des cryptes | 1–5 | à produire |
 | Limon d'encre | 1–5 | à produire |
@@ -132,6 +132,14 @@
 | Wyverne des orages | 36–45 | à produire |
 | Jeune dragon | 36–45 | à produire |
 | Dragon ancien | 46–50 | à produire |
+
+### Boss de donjon (4, validés 10/07/2026)
+| Boss | Donjon — étage | Statut |
+|---|---|---|
+| Gardien de la Crypte | Crypte de l'Académie — ét. 5 | à produire |
+| Bibliothécaire spectral | Crypte de l'Académie — ét. 10 | à produire |
+| Golem de foudre | Tour foudroyée — ét. 5 | à produire |
+| Wyverne matriarche | Tour foudroyée — ét. 10 | à produire |
 
 ---
 
@@ -186,6 +194,78 @@
 | PvP (recherche de cible, pré-combat) | 5 | à maquetter |
 | Classements | 5 | à maquetter |
 | Boutique de cosmétiques (gemmes) | 6 | à maquetter |
+
+---
+
+## Lot VI — Catalogue d'équipement (proposition pour le seed de la Phase 3)
+
+> **Politique visuelle actée le 10/07/2026 (hybride)** : un objet = icône de son emplacement (Lot I) recolorée + bordure de rareté (DA §4 : commun gris, peu commun givre, rare or, épique grenat). **Aucune icône dédiée, sauf les 5 épiques de boss** — le butin épique garde son moment « waouh », fidèle au principe « rare donc précieux ». Les bonus d'attributs seront chiffrés au seed de la Phase 3 ; ici on fixe les noms, emplacements et raretés.
+
+### Équipement de départ (acté GDD §1 — remis à la création)
+| Objet | Emplacement | Rareté |
+|---|---|---|
+| Bâton d'apprenti | bâton | commun |
+| Robe usée | robe | commun |
+
+### Boutique de l'école — 5 tranches × 8 emplacements (40 objets, communs → peu communs)
+| Emplacement | Apprenti (1–10) | Disciple (11–20) | Compagnon (21–30) | Maître (31–40) | Archimage (41–50) |
+|---|---|---|---|---|---|
+| Bâton | Bâton de coudrier | Bâton d'if noueux | Bâton ferré de runes | Bâton à orbe de cristal | Bâton de l'aube |
+| Chapeau | Chapeau de feutre | Chapeau à large bord | Chapeau étoilé | Chapeau du conseil | Chapeau d'astronome |
+| Robe | Robe de bure | Robe de laine teinte | Robe brodée d'argent | Robe d'examinateur | Robe de nuit étoilée |
+| Bottes | Bottes de cuir souple | Bottes cloutées | Bottes de pas feutrés | Bottes du messager | Bottes de brume |
+| Gants | Gants de chanvre | Gants de peau retournée | Gants d'archiviste | Gants d'incantateur | Gants de duelliste |
+| Amulette | Amulette de verre filé | Amulette d'ambre | Amulette de pierre de lune | Amulette scellée | Amulette du recteur |
+| Anneau 1 | Anneau de cuivre | Anneau d'argent | Anneau de grenat | Anneau d'or terni | Anneau de l'équinoxe |
+| Anneau 2 | Anneau d'étain | Anneau de jaspe | Anneau de givre | Anneau des quatre écoles | Anneau du solstice |
+
+### Butin rare (10 — chasse et étages de donjon, jamais en boutique)
+| Objet | Emplacement | Source indicative |
+|---|---|---|
+| Bâton en nerf de dragon | bâton | Jeune dragon |
+| Chapeau du croque-mitaine | chapeau | Goule de la crypte |
+| Robe tissée de brume | robe | Esprit frileux |
+| Robe du veilleur de crypte | robe | Crypte de l'Académie (étages) |
+| Bottes du monte-en-l'air | bottes | Gobelin chapardeur |
+| Gants du prestidigitateur | gants | Feu follet |
+| Amulette de sang de golem | amulette | Golems |
+| Anneau de feu follet | anneau | Feu follet |
+| Chapeau de la harpie | chapeau | Harpie des tours |
+| Anneau de la liche | anneau | Liche mineure |
+
+### Épiques de boss (5 — les seuls objets à icône dédiée)
+| Objet | Emplacement | Boss | Icône dédiée | Statut |
+|---|---|---|---|---|
+| Bâton du Premier Recteur | bâton | Bibliothécaire spectral | SVG 24 px | à produire |
+| Cœur de la Crypte | amulette | Gardien de la Crypte | SVG 24 px | à produire |
+| Anneau de foudre vive | anneau | Golem de foudre | SVG 24 px | à produire |
+| Bottes de la Matriarche | bottes | Wyverne matriarche | SVG 24 px | à produire |
+| Couronne du Dragon Ancien | chapeau | Dragon ancien (chasse, très rare) | SVG 24 px | à produire |
+
+---
+
+## Lot VII — Ingrédients et potions (contenu nommé, icônes du Lot I)
+
+### Ingrédients d'alchimie (8 — récolte PvE, coût des rerolls)
+| Ingrédient | Rareté | Icône (Lot I) |
+|---|---|---|
+| Herbe de lune | commun | herbe |
+| Pétale de mandragore | commun | herbe |
+| Poudre d'os | commun | poudre |
+| Cristal de givre | commun | cristal |
+| Essence spectrale | peu commun | essence |
+| Larme de golem | peu commun | cristal |
+| Écaille de wyverne | rare | poudre |
+| Cendre de dragon | rare | essence |
+
+### Potions de boost (5 — une par attribut, achat en or uniquement)
+| Potion | Attribut | Visuel |
+|---|---|---|
+| Potion de Puissance | Puissance magique | fiole (Lot I) recolorée grenat |
+| Potion de Concentration | Concentration | fiole recolorée or-terni |
+| Potion de Résistance | Résistance | fiole recolorée ombre-violette-clair |
+| Potion de Vitalité | Vitalité | fiole recolorée grenat-clair |
+| Potion de Sagesse | Sagesse | fiole recolorée givre-arcane |
 
 ---
 

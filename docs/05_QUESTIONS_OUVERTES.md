@@ -19,6 +19,8 @@
 14. **Occupation exclusive** — pendant une quête à minuteur, le personnage est occupé : pas de chasse, pas de donjon, pas d'attaque PvP sortante. L'entraînement d'attribut et la transmutation restent possibles (activités « passives »). Résout la question laissée ouverte dans `03_MODELE_DONNEES.md`.
 15. **Axe bon/mauvais** — idée V2 sous forme purement cosmétique (titre/bannière d'alignement), aucun impact gameplay. Retirée des questions ouvertes.
 16. **Doc antitriche** — `09_ANTITRICHE.md` rédigé (statut : propositions à valider par le porteur de projet avant la Phase 5).
+17. **Bestiaire de départ** — les 20 créatures de chasse + 4 boss (2 donjons V1 : Crypte de l'Académie, Tour foudroyée) sont validés ; la liste de référence vit dans `docs/assets/REGISTRE.md` (Lot II) et servira au seed de la Phase 2.
+18. **Visuel des objets d'équipement** — politique **hybride** : icône d'emplacement recolorée + bordure de rareté pour tout le catalogue ; icône unique dédiée réservée aux 5 épiques de boss.
 
 ## Questions restantes (à trancher avant la phase concernée)
 1. **Nombre d'actions par jour** — ACTÉ : délégué à l'équilibrage de l'implémentation (départ 15/jour en config).
