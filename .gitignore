@@ -2,3 +2,7 @@
 # Recherche/référence uniquement : ne JAMAIS commiter ni intégrer au jeu
 # (voir docs/08_REFERENCES_ORIGINAL.md §7 et docs/assets/REGISTRE.md).
 /asset/
+
+# Inbox locale de liens du porteur de projet — intégrée périodiquement
+# dans docs/assets/INSPIRATIONS.md (voir sa section « L'inbox de liens »).
+/docs/assets/link_asset_lib.md

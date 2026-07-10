@@ -38,6 +38,15 @@
 | [Flame FX](https://binbun3d.itch.io/flame-fx) / [Elemental magic FX](http://binbun3d.itch.io/elemental-magic-fx) (itch) | effets Godot | hors scope (pas de moteur temps réel) |
 | [TTRPG legacy rings (2000+ combinaisons)](https://ddant1100.itch.io/ttrpg-legacy-rings-1) (itch) | icônes d'anneaux | dépannage pour nos 10 anneaux nommés |
 | [The art of scrolls 16×16](https://bigwander.itch.io/the-art-of-scrolls) (itch) | parchemins pixel | placeholder quêtes |
+| [Godot portal VFX](https://binbun3d.itch.io/godot-portal-vfx) (itch) | effets Godot | hors scope (pas de moteur temps réel) |
+| [Fantasy jewelry pack 36 items](https://batareya.itch.io/pixel-art-fantasy-jewelry-pack-36-items) (itch) | bijoux pixel | placeholder amulettes/anneaux |
+| [Golems & elementals sprites (34)](https://batareya.itch.io/pixel-art-golems-elementals-sprite-pack) (itch) | golems + élémentaires | ⭐ référence de variantes pour nos 3 golems et l'Élémentaire déchaîné |
+| [50 aeromancer skill icons](https://free-game-assets.itch.io/free-50-rpg-aeromancer-skill-icons) (itch) | icônes de sorts | placeholder icônes de sorts en attendant le seed Phase 2 |
+| [32 magic books pixel art](https://captainskolot.itch.io/magic-books-pixelart-pixel-art-sprite-grimoire-pack-for-rpg-fantasy) (itch) | grimoires pixel | référence de formes pour l'icône grimoire (la nôtre : SVG) |
+| [40 monk skill icons](https://captaincatsparrow.itch.io/40-free-monk-skill-icons) (itch) | icônes de compétences | peu pertinent (thème moine/arts martiaux) |
+
+### L'inbox de liens
+`docs/assets/link_asset_lib.md` est l'**inbox locale du porteur de projet** (gitignorée, jamais commitée) : colles-y tes liens en vrac au fil de tes trouvailles ; ils sont intégrés ici périodiquement, annotés, puis l'inbox peut être vidée.
 
 ## Note de production : rendus 3D (Three.js, Blender…)
 
