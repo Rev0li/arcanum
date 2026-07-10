@@ -29,6 +29,19 @@ Fournie par le porteur de projet : page de connexion en **espagnol** sur un **se
 - Quatre vignettes de présentation en bas (aperçus du jeu : interface, baguettes/sorts, parchemin de stats, personnage).
 - Footer : © 2007-2010 RedMoon Studios GmbH & Co. KG, mentions légales, et liens croisés vers les autres jeux du studio.
 
+## 4 bis. Captures et artworks d'époque fournis par le porteur de projet (10/07/2026)
+
+Six fichiers d'origine (Exif : Photoshop CS2, juillet 2007) conservés dans le dossier local `asset/`, **gitignoré — jamais commités, jamais intégrés** (propriété CRATR.games, cf. §7). C'est la plus riche source primaire du projet : deux écrans internes réels, ce que les archives en ligne n'avaient pas livré.
+
+- **`home.jpg` — écran réel de la page personnage** (« Charakterseite », version allemande) : navigation principale à 5 entrées — **Mein Charakter / Mein Zauberbuch / Meine Schatztruhe / Mein Turm / Accountdaten** (personnage / grimoire / coffre au trésor / **tour** / compte) ; rangée d'icônes d'action serties dans des orbes de verre sous le logo ; fiche : Level, Zirkel, **Gesinnung : « neutral »**, Gold, **Status : « Bereit »** ; portrait dans un cadre baroque flanqué d'un orbe bleu et d'un orbe rouge avec barre de progression ; programme de parrainage (250 or par filleul).
+- **`profil_which.png` — zoom de la même fiche** (« mariposa », niveau 1) : libellé exact **« Gold / Edelsteine : 50 / 0 »** → l'or de départ était 50, or et gemmes affichés côte à côte.
+- **`spell_house.jpg` — écran réel du grimoire** (« Mein Zauberbuch ») : livre ouvert sur parchemin, **onglets-marque-pages colorés par famille de magie (7 visibles)** ; règle affichée en toutes lettres : *l'ordre des sorts détermine leur utilisation en combat — au 1er tour le 1er sort, au 2e tour le 2e, etc. ; les sorts désactivés ne sont pas utilisés* ; chaque sort affiche : effet typé (« Kampf Luft 1–2 », « Kampf Wasser 1–2 », « Heilung 1–1 »), coût en mana, **niveau « 1 / 3 » (rang max 3)** et des commandes monter / descendre / activer / désactiver. Sorts attestés : **Rauch** (fumée, air), **Kälte** (froid, eau), **Leichte Heilung** (soin léger).
+- **`baton.jpg` — artwork promo** : quatre bâtons aux magies rouge, verte, bleue et violette — écho direct à nos quatre écoles.
+- **`character_3d.jpg` — artwork promo** : mage en robe bleue ornementée, bâton à orbe lumineux, cercle runique au sol.
+- **`icon.webp`** : avatar/favicon d'époque (visage de sorcière, 32 px).
+
+**Mécaniques nouvellement attestées** (jusqu'ici seulement déduites du marketing) : l'axe d'alignement existait comme champ de la fiche (« Gesinnung », avec état **neutre** par défaut) ; le personnage avait un **statut d'occupation** (« Bereit ») — notre occupation exclusive est donc fidèle ; les sorts avaient des **rangs** (max 3) et une **activation/désactivation** ; l'exécution en combat suivait **strictement l'ordre de la liste** ; il existait une section « Ma tour » (piste V2 à creuser : demeure du joueur ?).
+
 ## 5. Sources (vérifiées le 07/07/2026)
 | Source | Contenu utile |
 |---|---|
@@ -52,8 +65,11 @@ Fournie par le porteur de projet : page de connexion en **espagnol** sur un **se
 |---|---|---|---|
 | Monnaie premium | Rubis/gemmes échangeables contre de l'or (pay-for-advantage) | Gemmes 100 % cosmétiques | Décision actée (05) : modèle moderne type Riot, plus sain |
 | Orientations magiques | 3 voies : arts noirs / éléments / magie blanche | 4 écoles : Feu, Givre, Arcane, Nature | Décision actée : « comme des écoles mais plus moderne » ; les 4 écoles couvrent les 3 voies (Nature ≈ magie blanche/soins) |
-| Axe bon/mauvais | Présent dans le discours du jeu | Absent du GDD actuel | Non retenu à ce stade — idée notée en question ouverte (05) pour une V2 éventuelle (titre ou bannière d'alignement cosmétique ?) |
+| Axe bon/mauvais | **Attesté en jeu** : champ « Gesinnung » de la fiche, défaut « neutral » (cf. §4 bis) | Absent de la V1 | ACTÉ (05, décision n°15) : idée V2 purement cosmétique |
 | Nom, assets, textes | Propriété RedMoon/CRATR.games | Identité 100 % originale | Obligation légale (voir 05 et 07) |
+| Algorithme de combat | Tour N = sort n° N de la liste, sorts désactivables (attesté, grimoire §4 bis) | Premier sort de la liste dont le mana suffit et hors recharge | Écart mineur assumé : évite les tours morts quand le mana manque |
+| Rangs de sorts | Max 3 (attesté, grimoire §4 bis) | 5 rangs | Écart assumé : progression plus longue durée |
+| Or de départ | 50 (attesté §4 bis) | 100 | Valeur d'équilibrage en `game_config`, ajustable |
 
 ## 7. Avertissement
 Les marques, textes et visuels de Tales of Magic appartiennent à leurs ayants droit (CRATR.games GmbH). Ce document est une compilation de faits publics à but de recherche et de design. Le registre des assets du remake (`docs/assets/REGISTRE.md`, cf. 07) garantit qu'aucun élément protégé n'entre dans le projet.
