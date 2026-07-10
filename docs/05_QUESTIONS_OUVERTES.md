@@ -21,6 +21,7 @@
 16. **Doc antitriche** — `09_ANTITRICHE.md` rédigé (statut : propositions à valider par le porteur de projet avant la Phase 5).
 17. **Bestiaire de départ** — les 20 créatures de chasse + 4 boss (2 donjons V1 : Crypte de l'Académie, Tour foudroyée) sont validés ; la liste de référence vit dans `docs/assets/REGISTRE.md` (Lot II) et servira au seed de la Phase 2.
 18. **Visuel des objets d'équipement** — politique **hybride** : icône d'emplacement recolorée + bordure de rareté pour tout le catalogue ; icône unique dédiée réservée aux 5 épiques de boss.
+19. **Style des illustrations** — direction **picturale « type Arcane »** (peinture texturée, coups de pinceau visibles, éclairage théâtral — référence : la série de Riot/Fortiche) pour les 37 illustrations et le concept art. Le rendu 3D lisse est écarté (les 2 concepts 3D restent en historique d'exploration). Règle d'exécution : décrire les **attributs** du style dans les prompts, jamais citer la marque (IP + qualité). Gabarit v2 dans `docs/assets/PROMPTS.md`.
 
 ## Questions restantes (à trancher avant la phase concernée)
 1. **Nombre d'actions par jour** — ACTÉ : délégué à l'équilibrage de l'implémentation (départ 15/jour en config).
