@@ -50,4 +50,4 @@
 ## Relations clés à respecter
 - Un `combat_report` référence toujours sa `seed` → tout combat est rejouable par le moteur pour audit.
 - `characters.gold_on_hand` et `gold_banked` sont dénormalisés mais chaque variation crée une ligne `gold_ledger` dans la même transaction.
-- `active_timers` : contrainte « un seul timer de type training actif par personnage » ; les quêtes occupent aussi le personnage (pas de chasse pendant une quête longue — règle de gameplay à confirmer, voir questions ouvertes).
+- `active_timers` : contrainte « un seul timer de type training actif par personnage » ; les quêtes occupent le personnage de façon **exclusive** : pas de chasse, donjon ni attaque PvP pendant une quête ; entraînement et transmutation restent autorisés (décision actée 10/07/2026, voir 05).

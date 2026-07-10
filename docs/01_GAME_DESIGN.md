@@ -67,6 +67,7 @@ Résolution au tour par tour, intégralement côté serveur :
 
 ### 5.3 Quêtes
 - **Quêtes à minuteur** (fidèle à l'original) : le joueur choisit une mission (courte 10 min / moyenne 1 h / longue 4 h), le personnage est occupé pendant la durée, récompense à la fin avec un petit texte narratif. Possibilité d'événements aléatoires en cours de mission (bonus ou embuscade → combat).
+- **Occupation exclusive** (décision actée 10/07/2026) : un personnage en quête ne peut ni chasser, ni lancer un donjon, ni attaquer en PvP tant que la mission n'est pas terminée. L'entraînement d'attribut et la transmutation, activités « passives », restent possibles en parallèle. C'est ce qui donne du poids au choix courte/moyenne/longue.
 - **Quêtes journalières** : 3 objectifs simples par jour (ex. : chasser 3 zombies) → bonus.
 - **Trame narrative légère** : chaîne de quêtes d'introduction (tutoriel déguisé) faisant visiter chaque système du jeu.
 
