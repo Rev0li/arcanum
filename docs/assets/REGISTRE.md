@@ -277,13 +277,44 @@
 |---|---|---|
 | `concept-portrait-capuche.webp` | Sorcière à capuche, flamme d'or | Très proche de la palette (encre nocturne + or terni). Style peinture ✓. Signature IA en bas à droite à retoucher. |
 | `concept-avatar-sorciere.webp` | Portrait sorcière, chapeau à gemme | Bon candidat de **style d'avatar** : buste 3/4, visage lisible en 64 px ✓. Fond gris à assombrir. |
-| `concept-mage-feu-3d.webp` | Mage de feu, rendu 3D, cercle runique | Fidèle au pipeline 3D de l'original (cf. 08 §4 bis) mais **rendu lisse ≠ gabarit peinture** de PROMPTS.md. |
-| `concept-mage-givre-3d.webp` | Mage de givre, rendu 3D | Idem — la paire feu/givre est cohérente entre elle. |
+| `concept-mage-feu-3d.webp` | Mage de feu, rendu 3D, cercle runique | **Écarté** (décision n°19 : direction picturale) — conservé en historique d'exploration. |
+| `concept-mage-givre-3d.webp` | Mage de givre, rendu 3D | **Écarté** — idem. |
 | `concept-hero-tour.webp` | Tour au crépuscule, corbeaux, cadre orné | **Candidat hero sérieux** : coche presque tout le gabarit (tour, crépuscule, corbeaux). Le cadre décoratif devra être retiré (le cadre est du ressort du CSS/SVG, pas de l'image). |
 | `concept-zombie-bestiaire.webp` | Zombie, style peint | Bon trait, mais **fond blanc = hors gabarit** (fond neutre sombre requis) — à regénérer sur fond sombre. |
 
-### ⚠️ Direction de style à trancher avant la production de masse
-Deux directions cohabitent dans ces concepts : **peinture numérique** (portrait-capuche, avatar-sorciere, zombie — c'est le gabarit actuel de `PROMPTS.md`) et **rendu 3D lisse** (mages feu/givre — fidèle aux artworks originaux, cf. `asset/character_3d.jpg`). Les deux sont légitimes ; il faut en choisir **une** pour les 37 illustrations finales, sinon le bestiaire et les avatars n'appartiendront pas au même monde. Décision à acter dans `05` (le gabarit PROMPTS sera mis à jour en conséquence).
+### ✅ Direction de style TRANCHÉE (10/07/2026, décision n°19)
+**Picturale « type Arcane »** : peinture texturée, coups de pinceau visibles, éclairage théâtral. Le rendu 3D lisse est écarté. Gabarit v2 dans `PROMPTS.md` — règle : décrire les attributs du style, jamais citer la marque dans un prompt.
+
+## File de concept art (à générer — ~5/jour, gabarit v2)
+
+> Chaque pièce fixe un morceau du monde **et** servira de référence (ou d'illustration d'ambiance) à un écran réel — comme l'original illustrait chaque page (bibliothèque, marchand, duel, cf. 08 §4 bis). Ordre = priorité. À la livraison d'une pièce : outil + prompt consignés ici, fichier dans `asset/` → intégré en WebP dans `concepts/`.
+
+### Vague 1 — les fondations du monde (à faire en premier)
+| # | Pièce | Format | Sert à |
+|---|---|---|---|
+| 1 | **La bibliothèque de nuit** — immense bibliothèque circulaire, grimoire lumineux sur un pupitre | 16:9 | LA formule de la DA ; écran « travail à l'école » |
+| 2 | **La tour de l'école au crépuscule, v2** — reprendre `concept-hero-tour` sans cadre, en pictural v2 | 21:9 | Hero de l'accueil public |
+| 3 | **Portrait sorcière de base** | carré | Avatar de création (Phase 1) |
+| 4 | **Portrait mage de base** | carré | Avatar de création (Phase 1) |
+| 5 | **Zombie affamé, v2** — reprendre le concept sur fond sombre | 3:4 | Première créature du bestiaire ; teste le gabarit créature |
+
+### Vague 2 — les lieux et PNJ des écrans
+| # | Pièce | Format | Sert à |
+|---|---|---|---|
+| 6 | **Le marchand de la boutique** — PNJ au grand chapeau derrière son comptoir encombré | 3:4 | Écran boutique (l'original avait son marchand) |
+| 7 | **Le bibliothécaire** — vieux mage sévère entre les rayonnages | 3:4 | Écran travail à l'école |
+| 8 | **La salle d'alchimie** — cornues, athanor, ingrédients suspendus | 16:9 | Écran alchimie/reroll |
+| 9 | **La banque de l'école** — chambre forte aux coffres runiques | 16:9 | Écran banque |
+| 10 | **La Crypte de l'Académie** — escalier s'enfonçant sous l'école, lueur grenat | 16:9 | Donjon 1 |
+| 11 | **La Tour foudroyée** — ruine frappée d'orage perpétuel | 16:9 | Donjon 2 |
+| 12 | **Duel de mages** — feu contre givre, à distance | 16:9 | Écran PvP (écho au visuel d'époque) |
+
+### Vague 3 — motifs et déclinaisons
+| # | Pièce | Format | Sert à |
+|---|---|---|---|
+| 13 | **Les 4 bâtons élémentaires** — nature morte, écho assumé à l'artwork d'époque | 3:4 | Vitrine/boutique ; clin d'œil à `baton.jpg` |
+| 14 | **Vignettes des 4 écoles** — Feu, Givre, Arcane, Nature (une main incantant chaque magie) | 4 × carré | Choix d'école à la création |
+| 15 | **Le chat noir familier** | carré | Tease V2 / cosmétique de bannière |
 
 ---
 

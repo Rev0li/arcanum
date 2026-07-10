@@ -4,19 +4,23 @@
 >
 > Avant toute production : vérifier que les conditions de l'outil autorisent l'usage commercial, et consigner **outil + version + prompt exact (+ seed si disponible)** dans la ligne de l'asset du `REGISTRE.md`.
 
-## Gabarit de base — v1 (10/07/2026)
+## Gabarit de base — v2 (10/07/2026, direction picturale actée — décision n°19)
+
+Référence d'intention : la facture peinte des séries d'animation type Fortiche (*Arcane*). ⚠️ **Ne jamais écrire « Arcane », « Riot » ou « Fortiche » dans un prompt** : on décrit les attributs du style (meilleure qualité, et zéro risque de ressemblance à une IP).
 
 ```
-Peinture numérique dark fantasy, style grimoire ancien, facture picturale
-(coups de pinceau visibles, pas de rendu 3D lisse, pas de photoréalisme).
-Palette imposée : fonds bleu-noir profond (#191627, #252038), lumières
-or terni (#C9A24B), accents givre (#7BA7C9) et grenat (#A93A5B),
-touches parchemin (#E9DEC3). Éclairage crépusculaire, une seule source
-de lumière magique. Fond neutre sombre uni ou légèrement vaporeux.
+Illustration peinte, style peinture numérique texturée de série d'animation
+moderne : coups de pinceau visibles, textures picturales façon gouache/huile,
+traits de construction assumés, PAS de rendu 3D lisse, PAS de photoréalisme,
+PAS de cel-shading plat. Éclairage théâtral très contrasté : une source de
+lumière magique colorée + contre-jour (rim light), profondeur atmosphérique,
+grain pictural. Palette imposée : fonds bleu-noir profond (#191627, #252038),
+lumières or terni (#C9A24B), accents givre (#7BA7C9) et grenat (#A93A5B),
+touches parchemin (#E9DEC3). Fond neutre sombre ou vaporeux.
 Aucun texte, aucun logo, aucune signature, aucun filigrane.
 ```
 
-Interdits (rappel DA §1) : vert acide, dégradés violets « gaming » saturés, esthétique néon. Et évidemment : aucune imitation des artworks du Tales of Magic original, aucun personnage sous IP.
+Interdits (rappel DA §1) : vert acide, dégradés violets « gaming » saturés, esthétique néon, pixel art. Et évidemment : aucune imitation des artworks du Tales of Magic original, aucun personnage sous IP (ni ToM, ni Arcane).
 
 ## Déclinaison Créature (Lot II)
 Gabarit de base +
@@ -48,7 +52,18 @@ fenêtres éclairées, corbeaux dans le ciel, premier plan sombre. Ambiance
 ```
 - Clin d'œil à l'original (tour au crépuscule) **sans en copier la composition** — vérifier visuellement contre la capture de référence avant adoption.
 
+## Déclinaison Concept art / scène (file du REGISTRE)
+Gabarit de base +
+```
+Scène d'ambiance : [SUJET, ex. « une immense bibliothèque circulaire la
+nuit, un grimoire ouvert et lumineux sur un pupitre, chandelles »].
+Composition cinématographique, plan large ou moyen, un point focal
+lumineux unique. Format paysage 16:9 (ou 3:4 pour un PNJ en pied).
+```
+- Le concept art sert à **fixer le monde** avant les assets finaux : lieux des écrans, PNJ, donjons. Une scène validée devient la référence de son écran.
+
 ## Journal des versions
 | Version | Date | Changement |
 |---|---|---|
 | v1 | 10/07/2026 | Gabarit initial (base + créature + avatar + hero) |
+| v2 | 10/07/2026 | Direction picturale « type Arcane » actée (décision n°19) : attributs peints texturés, éclairage théâtral, interdiction de citer l'IP dans les prompts ; + déclinaison Concept art |
