@@ -42,6 +42,20 @@ Six fichiers d'origine (Exif : Photoshop CS2, juillet 2007) conservés dans le d
 
 **Mécaniques nouvellement attestées** (jusqu'ici seulement déduites du marketing) : l'axe d'alignement existait comme champ de la fiche (« Gesinnung », avec état **neutre** par défaut) ; le personnage avait un **statut d'occupation** (« Bereit ») — notre occupation exclusive est donc fidèle ; les sorts avaient des **rangs** (max 3) et une **activation/désactivation** ; l'exécution en combat suivait **strictement l'ordre de la liste** ; il existait une section « Ma tour » (piste V2 à creuser : demeure du joueur ?).
 
+### Deuxième dépôt (10/07/2026, après-midi) — 10 captures d'écrans internes supplémentaires
+
+`spell_book.png` (rapport de duel), `stat_character.png` (défenses), `studies.png` (école), `marchand.png` / `marchant1.png` (boutique), `Pvp.png` (recherche d'adversaire), `compagnons.png` (familiers), `spell_hous_1.png` (grimoire complet), `object.png`, `Tales-of-Magic-Free-Online-Fantasy-Game.webp` (visuel promotionnel). Mécaniques attestées :
+
+- **Système élémentaire à 5 éléments** : Terre, Eau, Air, Feu et **Nécromancie** (« Schutz Erde/Wasser/Luft/Feuer/Nekromantie » sur la fiche de défense) ; le grimoire montre **7 onglets** de familles de sorts. Sorts attestés en plus : « Dunkelheit » (ténèbres).
+- **Attributs originaux** : Intelligenz, Ausdauer, Präzision, Willenskraft (intelligence, endurance, précision, volonté — base 10) — différents de nos 5 attributs.
+- **Rapport de duel** : deux colonnes (une par combattant), une ligne par action avec l'icône du sort, échecs possibles (« trifft daneben »), **auto-soins en plein combat** via le sort de soin de la séquence ; « canuslupus est protégé de l'élément Air par la **protection de la tour** » — la tour (« Mein Turm ») fournissait des défenses élémentaires ; fin : « le vainqueur reçoit 7 Gold du perdant ».
+- **Équipement** : **11 catégories d'emplacements** (arme, taille, jambes, mains, bras, cou, tête, corps, front, doigt, pieds) + potions ; un objet donnait des **défenses élémentaires permanentes** (ex. : « Mondlichthut, +5 défense Eau, catégorie Tête, 338 or »), pas des bonus d'attributs ; « un seul exemplaire porté par objet » ; plus le niveau est haut, plus on peut acheter d'objets.
+- **Potions** : restauration **instantanée** (« Kleiner Mana-Regenerationstrunk : +35 mana, usage unique, 20 or ») — pas des boosts temporaires.
+- **École** : quota de **minutes d'étude par jour** (90 min, **120 pour les comptes premium** — avantage payant d'époque), dropdown de durée (10 min…), récompense : XP « et parfois quelques pièces d'or ».
+- **Familiers (« Begleiter »)** : compagnons achetables (chat noir à 1 000 or), donnant des points d'attributs, **entraînables**, avec un **talent magique** utilisable N fois/jour selon le niveau du familier (ex. : « Siebter Sinn » — deviner la stratégie d'attaque d'un adversaire). Système complet absent de notre GDD — **candidat V2 sérieux**.
+- **PvP** : recherche d'adversaire par plage de niveaux ou par pseudo (min. 3 caractères).
+- **Grimoire** : renommable par le joueur (« Spruchbuch mariland ») — détail charmant, candidat V1 à coût nul.
+
 ## 5. Sources (vérifiées le 07/07/2026)
 | Source | Contenu utile |
 |---|---|
@@ -70,6 +84,13 @@ Six fichiers d'origine (Exif : Photoshop CS2, juillet 2007) conservés dans le d
 | Algorithme de combat | Tour N = sort n° N de la liste, sorts désactivables (attesté, grimoire §4 bis) | Premier sort de la liste dont le mana suffit et hors recharge | Écart mineur assumé : évite les tours morts quand le mana manque |
 | Rangs de sorts | Max 3 (attesté, grimoire §4 bis) | 5 rangs | Écart assumé : progression plus longue durée |
 | Or de départ | 50 (attesté §4 bis) | 100 | Valeur d'équilibrage en `game_config`, ajustable |
+| Attributs | Intelligenz, Ausdauer, Präzision, Willenskraft (attesté) | Puissance, Concentration, Résistance, Vitalité, Sagesse | Décision actée n°1 — nos 5 attributs couvrent les mêmes rôles, plus lisibles |
+| Éléments / écoles | 5 éléments dont Nécromancie, 7 familles au grimoire (attesté) | 4 écoles (Feu, Givre, Arcane, Nature) | Décision actée n°2 — resserrage assumé ; la Nécromancie est une saveur V2 possible |
+| Emplacements d'équipement | 11 catégories + potions (attesté) | 8 emplacements | Simplification assumée pour la V1 |
+| Effets d'équipement | Défenses élémentaires permanentes (attesté) | Bonus d'attributs + effets spéciaux | Cohérent avec notre système à 5 attributs sans table de résistances élémentaires |
+| Potions | Restauration instantanée PV/mana (attesté) | Boosts temporaires d'attribut, jamais en combat | Décision actée (05, question n°3) — écart voulu, le combat reste 100 % automatique |
+| Travail à l'école | Quota de minutes/jour, bonus premium +30 min (attesté) | Minuteur → or, sans avantage payant | Le premium payant de 2008 contredirait nos gemmes 100 % cosmétiques |
+| Familiers (« Begleiter ») | Système complet : achat, entraînement, talents (attesté) | Absent | **Idée V2 à l'étude** — noté dans 05 |
 
 ## 7. Avertissement
 Les marques, textes et visuels de Tales of Magic appartiennent à leurs ayants droit (CRATR.games GmbH). Ce document est une compilation de faits publics à but de recherche et de design. Le registre des assets du remake (`docs/assets/REGISTRE.md`, cf. 07) garantit qu'aucun élément protégé n'entre dans le projet.

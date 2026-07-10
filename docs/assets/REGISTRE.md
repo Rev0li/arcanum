@@ -269,6 +269,24 @@
 
 ---
 
+## Concepts d'exploration (10/07/2026 — `docs/assets/concepts/`)
+
+> Premières générations IA du porteur de projet (rythme : ~5/jour, offre gratuite). Ce sont des **études de style**, pas des assets finaux. ⚠️ À consigner par le porteur : **nom et version de l'outil + prompt de chaque image** (obligatoire avant qu'un concept devienne un asset final) — et vérifier que l'offre gratuite autorise l'usage commercial, sinon regénérer les finaux sur un plan qui l'autorise.
+
+| Fichier | Sujet | Lecture au regard de la DA |
+|---|---|---|
+| `concept-portrait-capuche.webp` | Sorcière à capuche, flamme d'or | Très proche de la palette (encre nocturne + or terni). Style peinture ✓. Signature IA en bas à droite à retoucher. |
+| `concept-avatar-sorciere.webp` | Portrait sorcière, chapeau à gemme | Bon candidat de **style d'avatar** : buste 3/4, visage lisible en 64 px ✓. Fond gris à assombrir. |
+| `concept-mage-feu-3d.webp` | Mage de feu, rendu 3D, cercle runique | Fidèle au pipeline 3D de l'original (cf. 08 §4 bis) mais **rendu lisse ≠ gabarit peinture** de PROMPTS.md. |
+| `concept-mage-givre-3d.webp` | Mage de givre, rendu 3D | Idem — la paire feu/givre est cohérente entre elle. |
+| `concept-hero-tour.webp` | Tour au crépuscule, corbeaux, cadre orné | **Candidat hero sérieux** : coche presque tout le gabarit (tour, crépuscule, corbeaux). Le cadre décoratif devra être retiré (le cadre est du ressort du CSS/SVG, pas de l'image). |
+| `concept-zombie-bestiaire.webp` | Zombie, style peint | Bon trait, mais **fond blanc = hors gabarit** (fond neutre sombre requis) — à regénérer sur fond sombre. |
+
+### ⚠️ Direction de style à trancher avant la production de masse
+Deux directions cohabitent dans ces concepts : **peinture numérique** (portrait-capuche, avatar-sorciere, zombie — c'est le gabarit actuel de `PROMPTS.md`) et **rendu 3D lisse** (mages feu/givre — fidèle aux artworks originaux, cf. `asset/character_3d.jpg`). Les deux sont légitimes ; il faut en choisir **une** pour les 37 illustrations finales, sinon le bestiaire et les avatars n'appartiendront pas au même monde. Décision à acter dans `05` (le gabarit PROMPTS sera mis à jour en conséquence).
+
+---
+
 ## Références locales (jamais intégrées — voir 08 §4 bis)
 | Fichier (local `asset/`, gitignoré) | Nature | Propriété |
 |---|---|---|
