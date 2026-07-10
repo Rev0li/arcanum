@@ -6,3 +6,14 @@
 # Inbox locale de liens du porteur de projet — intégrée périodiquement
 # dans docs/assets/INSPIRATIONS.md (voir sa section « L'inbox de liens »).
 /docs/assets/link_asset_lib.md
+
+# Python / Django
+__pycache__/
+*.py[cod]
+.venv/
+.env
+/staticfiles/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
