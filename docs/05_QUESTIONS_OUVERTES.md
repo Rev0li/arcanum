@@ -15,9 +15,16 @@
 12. **Hébergement** — VPS personnel pour commencer.
 13. **Monde** — V1 : monde permanent unique, pas de saisons.
 
+## Décisions actées (brainstorm de relecture du 10/07/2026)
+14. **Occupation exclusive** — pendant une quête à minuteur, le personnage est occupé : pas de chasse, pas de donjon, pas d'attaque PvP sortante. L'entraînement d'attribut et la transmutation restent possibles (activités « passives »). Résout la question laissée ouverte dans `03_MODELE_DONNEES.md`.
+15. **Axe bon/mauvais** — idée V2 sous forme purement cosmétique (titre/bannière d'alignement), aucun impact gameplay. Retirée des questions ouvertes.
+16. **Doc antitriche** — `09_ANTITRICHE.md` rédigé (statut : propositions à valider par le porteur de projet avant la Phase 5).
+
 ## Questions restantes (à trancher avant la phase concernée)
 1. **Nombre d'actions par jour** — ACTÉ : délégué à l'équilibrage de l'implémentation (départ 15/jour en config).
 2. **Nature du reroll** — ACTÉ : totalement aléatoire, le résultat peut être pire (gamble fidèle 2008).
 3. **Potions** — ACTÉ : potions de **boost temporaire** (bonus d'attribut sur une durée), achetables uniquement en or, jamais en gemmes. Pas de potion utilisable en plein combat.
 4. **Nom du jeu** — **ACTÉ : ARCANUM**. Justification : rare (latin : le secret, le mystère), mémorable, évoque la magie sans la nommer directement, distinct de tous les jeux existants (« Arcanum: Of Steamworks and Magick Obscura » est un CRPG steampunk de 2001 ; l'idle clicker « Arcanum: Theory of Magic » est mineur et différent). Domaine .fr probablement disponible.
-5. **Axe bon/mauvais** (optionnel, découvert dans les références 08) — l'original mettait en avant un positionnement « bon ou mauvais ». Non retenu dans le GDD actuel ; idée V2 possible sous forme cosmétique (titre/bannière d'alignement) sans impact gameplay. À trancher plus tard, ne bloque rien.
+5. **Axe bon/mauvais** — ACTÉ (10/07/2026) : idée V2 cosmétique, voir décision n°15.
+
+> **Au 10/07/2026 : aucune question bloquante ouverte.** Toute nouvelle question découverte en cours d'implémentation s'ajoute ici avant d'être tranchée puis reportée dans le GDD.

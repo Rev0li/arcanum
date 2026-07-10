@@ -9,7 +9,7 @@
 |---|---|
 | Langage / framework | **Python 3.12+ / Django 5.x** (monolithe) |
 | Base de données | **PostgreSQL 16** |
-| Frontend | **Templates Django + HTMX** (+ CSS Tailwind ou feuille maison, thème dark fantasy) |
+| Frontend | **Templates Django + HTMX** + feuille CSS maison à tokens (`tokens.css`, voir `07_DIRECTION_ARTISTIQUE.md` — tranché post-ADR, pas de Tailwind) |
 | Jobs planifiés | Commande de management `resolve_timers` exécutée chaque minute (cron/supercronic dans le conteneur) |
 | Tests | pytest + pytest-django |
 | Conteneurisation | Docker Compose : `web` (gunicorn), `db` (postgres), `scheduler` |
@@ -30,6 +30,6 @@
 - **Node.js/TypeScript (NestJS/Fastify)** : pertinent pour une SPA riche, mais tout est à assembler (auth, admin, i18n, ORM, jobs) → plus de code généré, plus de décisions d'architecture déléguées à l'IA, plus de dépendances à maintenir. Le cahier des charges ne demande pas de front riche.
 
 ## Conséquences
-- Le moteur de combat est un module Python pur (`game/engine/combat.py`), sans dépendance Django, testé unitairement, seedé (`random.Random(seed)`).
+- Le moteur de combat est un module Python pur (`src/domain/combat/`, emplacement fixé par l'ADR-002), sans dépendance Django, testé unitairement, seedé (`random.Random(seed)`).
 - Les valeurs d'équilibrage vivent dans la table `game_config` + fixtures de seed.
 - Si un besoin d'interactivité dépasse HTMX, ajouter des **îlots Svelte** ciblés (compilés en web components autonomes, un îlot = un widget, ex. : éditeur drag-and-drop de la liste de sorts) plutôt que migrer vers une SPA. Svelte est retenu comme techno d'îlots : compilation légère sans runtime embarqué, et compétence existante du porteur de projet. Règle : un îlot ne contient jamais de logique de jeu, uniquement de l'interface ; le serveur reste autoritaire.

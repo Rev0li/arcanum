@@ -10,7 +10,7 @@
 
 ### Type d'application
 - Backend : API HTTP (REST ou équivalent) + tâches planifiées. Pas de websocket requis en V1 (le jeu est asynchrone) ; un simple polling léger ou refresh suffit pour la messagerie.
-- Frontend : SPA ou pages serveur, au choix, mais responsive (mobile-first acceptable) et léger. Esthétique : dark fantasy, parchemins et ornements, inspirée de la capture d'écran de l'original mais épurée. Consulter le skill `frontend-design` au moment du front.
+- Frontend : SPA ou pages serveur, au choix, mais responsive (mobile-first acceptable) et léger. Esthétique : dark fantasy, parchemins et ornements, inspirée de la capture d'écran de l'original mais épurée. La référence visuelle complète (tokens, composants, gabarits) est `07_DIRECTION_ARTISTIQUE.md`.
 - Base de données **relationnelle** (le modèle de données de `03_MODELE_DONNEES.md` est relationnel par nature).
 
 ### Gestion du temps (cœur du genre PBBG)
