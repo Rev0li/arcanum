@@ -62,7 +62,8 @@ Résolution au tour par tour, intégralement côté serveur :
 - Coût : 1 énergie (voir §8).
 
 ### 5.2 Donjons
-- Donjons thématiques à étages (ex. : « Crypte de l'Académie », 10 étages). Un étage = un combat contre un monstre de plus en plus fort.
+- Donjons thématiques à étages. Un étage = un combat contre un monstre de plus en plus fort.
+- V1 : deux donjons de 10 étages — **« Crypte de l'Académie »** et **« Tour foudroyée »** (validés 10/07/2026, boss et butins nommés dans `docs/assets/REGISTRE.md`).
 - Un essai par jour et par donjon. La progression d'étage est persistante. Boss tous les 5 étages avec butin unique.
 
 ### 5.3 Quêtes
