@@ -31,4 +31,4 @@ Chaîne de quêtes d'introduction (tutoriel), notifications en jeu (fin de minut
 **CA :** un nouveau joueur va de l'inscription au niveau 5 guidé par le tutoriel sans aide externe ; revue de sécurité effectuée et consignée.
 
 ## V2 (documenté, non implémenté)
-Guerres de cercles, boss de cercle, hôtel des ventes entre joueurs, événements saisonniers, monétisation réelle des gemmes, multi-serveurs, vérification email obligatoire, application des langues EN/ES/DE.
+Guerres de cercles, boss de cercle, hôtel des ventes entre joueurs, événements saisonniers, monétisation réelle des gemmes, multi-serveurs, vérification email obligatoire, application des langues EN/ES/DE, axe d'alignement cosmétique (décision actée n°15), **familiers** (système attesté dans l'original — achat, entraînement, talents journaliers, cf. 08 §4 bis), 5e école « Nécromancie ».
